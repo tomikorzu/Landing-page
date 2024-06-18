@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body{
+    margin: 0;
+    background-color: #767575;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url(../img/bg.png);
+}
+
+/* --- Topbar --- */
+
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10% 0 10%;
+}
+
+.topbar img{
+    padding: 0 10px 0 0;
+    width: 20px;
+    height: 20px;
+}
+
+.contact-topbar{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.topbar p{
+    color: #fff;
+    padding: 3px 0 0 0;
+    margin: 0;
+}
+
+.topbar ul{
+    display: flex;
+    gap: 20px;
+}
+
+.mail{
+    display: flex;
+
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+    .topbar{
+        display: none;
+    }
+}
+
+@media (max-width: 1024px){
+    .bg-f{
+        display: none;
+    }
+}
+
+/* --- Nav --- */
+
+.navbar{
+    background-color: #fff;
+    display: flex;
+    height: 60px;
+    margin: 20px 10%;
+    border-radius: 5px;
+    align-items: center;
+}
+
+@media (max-width: 1024px){
+    .navbar{
+    }
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 0 0 50px;
+}
+
+.navbar a{
+    color: #000;
+}
+
+.navbar .bg-f:hover{
+    color: #5956E9;
+    border-bottom: 2px solid #5956E9bd;
+    transform: translateY(-3px);
+    transition: .2s;
+}
+
+.navbar .links1, .navbar .links2{
+    display: flex;
+    gap: 30px;
+}
+
+.navbar::before{
+    content: url(../img/Logo4\ 1.png);
+    position: absolute;
+    width: 16%;
+    height: 85px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #00000010;
+    border-right: 1px solid #00000010;
+    box-sizing: border-box;
+    left: 41%;
+    border-radius: 5px;
+}
+
+.download{
+    background-color: #5956E9;
+    padding: 15px 20px;
+    color: #fff ;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.download:hover{
+    background-color: #6865ee;
+    transition: .2s;
+}
