@@ -5,110 +5,125 @@ body{
     background-color: #767575;
     font-family: "Josefin Sans", sans-serif;
 }
-
 ul{
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 a{
     text-decoration: none;
 }
 
 .hero{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     background: url(../img/bg.png);
 }
 
+header{
+    margin: 0;
+    padding: 40px 10px;
+}
 
 
+.topbar{
+    display: none;
+}
 
-/* --- Nav --- */
 
 .navbar{
     background-color: #fff;
     display: flex;
     justify-content: space-between;
-    height: 60px;
+    height: 50px;
     border-radius: 5px;
     align-items: center;
 
 }
-
 .navbar a{
     color: #000;
 }
 
-.navbar .bg-f:hover{
-    color: #5956E9;
-    border-bottom: 2px solid #5956E9bd;
-    transform: translateY(-3px);
-    transition: .2s;
-}
 
-
-
-
-
-.download{
-    background-color: #5956E9;
-    padding: 15px 20px;
-    color: #fff ;
-    margin: 0 5px 0 0;
-    border-radius: 5px;
-    border: none;
-}
-
-.download:hover{
-    background-color: #6865ee;
-    transition: .2s;
-}
-
-.toggle{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 15px;
-    padding: 60px 60px 30px 25px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    transform: translateY(-400px);
-    list-style: none;
-}
-
-.toggle a:hover{
-    color: #5956E9;
-}
-
-.list{
+.list {
+    position: relative;
     display: block;
-    appearance: none;
-    width: 30px;
-    height: 30px;
-    background-color: #000;
-    background: url(../svg/list.svg);
-    margin: 0;
+    height: 32px;
+    width: 32px;
+    margin-left: 25px;
+    left: -13px;
+    z-index: 5;
+    opacity: 0;
     cursor: pointer;
 }
 
 
-
-.list:checked{
-    transition: .5s;
-    z-index: 5;
-    background: url(../svg/x.svg) center / cover #5956E9;
-    border-radius: 100%;
-}
-
-
-.list:checked ~ .toggle{
+.lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    left: 25px;
+    z-index: 2;
     display: flex;
-    transform: translateY(75px);
-    transition: .75s;
+    flex-direction: column;
+    justify-content: space-between;
 }
+.line {
+    display: block;
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+}
+.line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+.line2 {
+    transition: transform 0.2s ease-in-out;
+}
+.line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+
+.toggle{
+    padding: 60px 40px 0 20px;
+    background-color: #fff;
+    height: 200px;
+    transform: translateX(-200%) translateY(41%);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+    list-style: none;
+    border-radius: 5px;
+    position: absolute;
+}
+.toggle li{
+    margin-bottom: 20px;
+}
+.toggle a:hover{
+    color: #5956E9;
+}
+
+
+.list:checked ~ .toggle {
+    transform: translateX(0%);
+    transform: translateY(41%);
+}
+.list:checked ~ .lines .line1 {
+    transform: rotate(45deg);
+}
+.list:checked ~ .lines .line2 {
+    transform: scaleY(0);
+}
+.list:checked ~ .lines .line3 {
+    transform: rotate(-45deg);
+}
+
 
 .logo{
     display: flex;
@@ -118,121 +133,113 @@ a{
     border-radius: 5px;
     padding: 20px 10px;
     z-index: 10;
+    width: 100px;
+    height: 30px;
+    background:url(../img/Logo4\ 1.png) center / contain no-repeat #fff;
+}
+.logo img{  
+    display: none;
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+.download{
+    background-color: #5956E9;
+    padding: 15px 5px;
+    color: #fff ;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    border: none;
+}
+.download:hover{
+    background-color: #6865ee;
+    transition: .2s;
 }
 
-
-
-@media (max-width: 767px){
-    .topbar{
-        display: none;
-    }
-
-    header{
-        padding: 30px 20px;
-    }
-
-    .bg-f{
-        display: none;
-    }
-
-    .links1{
-        padding: 0 0px 0 10px;
-    }
-
-    .navbar{
-        height: 50px;
-    }
-}
 
 @media (min-width: 768px) {
 
-    /* --- Topbar --- */
-
-.topbar{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 0
-}
-
-.topbar img{
-    width: 20px;
-    height: 20px;
-}
-
-.contact-topbar{
-    display: flex;
-    gap: 50px;
-    align-items: center;
-}
-
-.topbar p{
-    color: #fff;
-    padding: 3px 0 0 0;
-    margin: 0;
-}
-
-.topbar ul{
-    display: flex;
-    gap: 20px;
-}
-
-.mail{
-    display: flex;
-
-}
-
-.phone{
-    display: flex;
-    align-items: center;
-}
-
-    
-
-
-    
-
-    .download{
-        padding: 15px 10px;
-    }
-}
-
-@media (min-width:768px) and (max-width: 1023px){ 
-
-
-    .bg-f{
-        display: none;
-    }
-    .navbar{
-        height: 50px;
-    }
-
-    header{
-        margin: 0;
-        padding: 0px 30px;
-    }
-
-    
-
-    .links1{
-        padding: 0 0px 0 10px;
-    }
-
-    
-
-}
-
-@media (min-width:1024px){
     header{
         padding: 0 40px;
     }
     
-    .list{
+    .navbar{
+        height: 60px;
+    }
+
+    .lines{
+        left: 50px
+    }
+
+        /* --- Topbar --- */
+    .topbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0
+    }
+    .topbar img{
+        width: 20px;
+        height: 20px;
+    }
+    .contact-topbar{
+        display: flex;
+        gap: 50px;
+        align-items: center;
+    }
+    .contact-topbar img{
+        padding: 0 10px 0 0;
+    }
+    .topbar p{
+        color: #fff;
+        padding: 3px 0 0 0;
+        margin: 0;
+    }
+    .topbar ul{
+        display: flex;
+        gap: 20px;
+    }
+    .mail{
+        display: flex;
+    }
+    .phone{
+        display: flex;
+        align-items: center;
+    }
+
+
+    .logo{
+        background: none;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0 0 75px 5px #00000020;
+        border-radius: 5px;
+        z-index: 10;
+        overflow: hidden;
+        justify-content: center;
+        width: 170px;
+        height: 50px;
+    }
+    .logo img{
+        display: block;
+        background-size: contain;
+    }
+
+
+    .download{
+        padding: 15px 20px;
+    }
+}
+
+
+@media (min-width: 1024px){
+    header{
+        padding: 0 100px;
+    }
+    
+    .toggle{
+        display: none;
+    }
+    .lines{
         display: none;
     }
 }
