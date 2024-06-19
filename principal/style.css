@@ -17,22 +17,150 @@ a{
 }
 
 .hero{
-    width: 100%;
-    height: 100%;
-    z-index: -1;
     background: url(../img/bg.png);
 }
 
-/* --- Topbar --- */
+
+
+
+/* --- Nav --- */
+
+.navbar{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    border-radius: 5px;
+    align-items: center;
+
+}
+
+.navbar a{
+    color: #000;
+}
+
+.navbar .bg-f:hover{
+    color: #5956E9;
+    border-bottom: 2px solid #5956E9bd;
+    transform: translateY(-3px);
+    transition: .2s;
+}
+
+
+
+
+
+.download{
+    background-color: #5956E9;
+    padding: 15px 20px;
+    color: #fff ;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.download:hover{
+    background-color: #6865ee;
+    transition: .2s;
+}
+
+.toggle{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    padding: 60px 60px 30px 25px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transform: translateY(-400px);
+    list-style: none;
+}
+
+.toggle a:hover{
+    color: #5956E9;
+}
+
+.list{
+    display: block;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    background: url(../svg/list.svg);
+    margin: 0;
+    cursor: pointer;
+}
+
+
+
+.list:checked{
+    transition: .5s;
+    z-index: 5;
+    background: url(../svg/x.svg) center / cover #5956E9;
+    border-radius: 100%;
+}
+
+
+.list:checked ~ .toggle{
+    display: flex;
+    transform: translateY(75px);
+    transition: .75s;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 75px 5px #00000020;
+    border-radius: 5px;
+    padding: 20px 10px;
+    z-index: 10;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+@media (max-width: 767px){
+    .topbar{
+        display: none;
+    }
+
+    header{
+        padding: 30px 20px;
+    }
+
+    .bg-f{
+        display: none;
+    }
+
+    .links1{
+        padding: 0 0px 0 10px;
+    }
+
+    .navbar{
+        height: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* --- Topbar --- */
 
 .topbar{
     display: flex;
     justify-content: space-between;
-    padding: 30px 10% 0 10%;
+    padding: 30px 0
 }
 
 .topbar img{
-    padding: 0 10px 0 0;
     width: 20px;
     height: 20px;
 }
@@ -64,83 +192,47 @@ a{
     align-items: center;
 }
 
-@media (max-width: 500px) {
-    .topbar{
-        display: none;
+    
+
+
+    
+
+    .download{
+        padding: 15px 10px;
     }
 }
 
-@media (max-width: 1024px){
+@media (min-width:768px) and (max-width: 1023px){ 
+
+
     .bg-f{
         display: none;
     }
-}
-
-/* --- Nav --- */
-
-.navbar{
-    background-color: #fff;
-    display: flex;
-    height: 60px;
-    margin: 20px 10%;
-    border-radius: 5px;
-    align-items: center;
-}
-
-@media (max-width: 1024px){
     .navbar{
+        height: 50px;
     }
+
+    header{
+        margin: 0;
+        padding: 0px 30px;
+    }
+
+    
+
+    .links1{
+        padding: 0 0px 0 10px;
+    }
+
+    
+
 }
 
-.navbar ul{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 0 0 50px;
-}
-
-.navbar a{
-    color: #000;
-}
-
-.navbar .bg-f:hover{
-    color: #5956E9;
-    border-bottom: 2px solid #5956E9bd;
-    transform: translateY(-3px);
-    transition: .2s;
-}
-
-.navbar .links1, .navbar .links2{
-    display: flex;
-    gap: 30px;
-}
-
-.navbar::before{
-    content: url(../img/Logo4\ 1.png);
-    position: absolute;
-    width: 16%;
-    height: 85px;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-left: 1px solid #00000010;
-    border-right: 1px solid #00000010;
-    box-sizing: border-box;
-    left: 41%;
-    border-radius: 5px;
-}
-
-.download{
-    background-color: #5956E9;
-    padding: 15px 20px;
-    color: #fff ;
-    margin: 0 5px 0 0;
-    border-radius: 5px;
-    border: none;
-}
-
-.download:hover{
-    background-color: #6865ee;
-    transition: .2s;
+@media (min-width:1024px){
+    header{
+        padding: 0 40px;
+    }
+    
+    .list{
+        display: none;
+    }
 }
