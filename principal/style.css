@@ -72,7 +72,7 @@ header{
 }
 .line {
     display: block;
-    height: 3px;
+    height: 4px;
     width: 100%;
     border-radius: 10px;
     background: #0e2431;
@@ -102,7 +102,7 @@ header{
     border-radius: 5px;
     position: absolute;
 }
-.toggle li{
+.toggle a{
     margin-bottom: 20px;
 }
 .toggle a:hover{
@@ -125,20 +125,23 @@ header{
 }
 
 
+
+
 .logo{
     display: flex;
     align-items: center;
     background-color: #fff;
     box-shadow: 0 0 75px 5px #00000020;
     border-radius: 5px;
+    justify-content: center;
     padding: 20px 10px;
     z-index: 10;
-    width: 100px;
+    width: 30%;
     height: 30px;
-    background:url(../img/Logo4\ 1.png) center / contain no-repeat #fff;
 }
-.logo img{  
-    display: none;
+
+.logo img{
+    width: 90%;
 }
 
 
@@ -161,16 +164,18 @@ header{
     align-items: center;
 }
 
-.logo{
-    width: 30%;
-    padding: 20px 0 ;
-}
+
 
 .link2{
     width: 30%;
     display: flex;
     justify-content: end;
 }
+
+.menu, .menu2{
+    display: none;
+}
+
 
 
 @media (min-width: 768px) {
@@ -219,31 +224,17 @@ header{
     }
     .phone{
         display: flex;
-        align-items: center;
+        align-items: center;    
     }
 
 
+    
     .logo{
-        background: none;
-        display: flex;
-        align-items: center;
-        background-color: #fff;
-        box-shadow: 0 0 75px 5px #00000020;
-        border-radius: 5px;
-        z-index: 10;
-        overflow: hidden;
-        justify-content: center;
-        width: 170px;
         height: 50px;
     }
-    .logo img{
-        display: block;
-        background-size: contain;
-    }
-
 
     .download{
-        opacity: 0;
+        width: 25%;
     }
 
 }
@@ -251,7 +242,7 @@ header{
 
 @media (min-width: 1024px){
     header{
-        padding: 0 100px;
+        padding: 0 80px;
     }
 
     .lines{
@@ -262,4 +253,48 @@ header{
         display: none;
     }
     
+    .download{
+        display: none;
+    }
+
+    .link1{
+        display: flex;
+        position: relative;
+    }
+
+    .list{
+        display: none;
+    }
+
+
+
+    .menu{
+        display: flex;
+        align-items: center;
+        padding: 0 0px 0 20px;
+        gap: 20px;
+    }
+    .menu2{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .link1, .link2{
+        width: auto;
+    }
+
+    .link1 a,.link2 a{
+        padding: 20px 10px;
+    }
+
+    .download2{
+        appearance: none;
+        border: none;
+        background-color: #5956E9;
+        color: #fff;
+        padding: 20px 10px;
+        margin: 0 5px 0 0;
+        border-radius: 5px;
+    }
 }
