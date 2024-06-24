@@ -15,10 +15,8 @@ a{
 }
 
 .hero{
-    width: 100%;
-    height: 100%;
     z-index: -1;
-    background: url(../img/bg.png);
+    background: url(../img/bg.png) center;
 }
 
 header{
@@ -176,6 +174,90 @@ header{
     display: none;
 }
 
+.menu a, .menu2 a{
+    transform: translateY(1px);
+}
+
+.menu a:hover, .menu2 a:hover{
+    color: #5956E9;
+    text-decoration: underline;
+    transition: .2s;
+    transform: translateY(-2px);
+}
+
+.hero-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding: 70px 0 0 0;
+}
+
+.hero-1{
+
+    background-color: #fff;
+    padding: 20px 0;
+    margin: 10px 10px 10px -30px;
+    z-index: 3;
+}
+
+.marco{
+    border: 10px solid #ffffff60;
+    box-sizing: border-box;
+    margin: 0 20px 0 40px;
+    z-index: 1;
+    
+}
+
+.hero-1 h2{
+    color: #5956E9;
+    font-weight: 500;
+    padding: 0 15px;
+    line-height: 35px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 25px;
+    z-index: 10;
+}
+
+.hero-1 p{
+    color: #767575;
+    padding: 0 15px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.hero-1 h3{
+    padding: 0 15px;
+    font-weight: 400;
+}
+
+.appstore{
+    padding: 0 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.appstore img{
+    width: 100px;
+}
+
+.hero-2{
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 120px 0;
+}
+
+.img-xs{
+    width: 75%;
+}
+
+.img-xl{
+    display: none;
+}
+
+
 
 
 @media (min-width: 768px) {
@@ -237,6 +319,8 @@ header{
         width: 25%;
     }
 
+    
+
 }
 
 
@@ -288,6 +372,10 @@ header{
         padding: 20px 10px;
     }
 
+    .logo{
+        width: 20%;
+    }
+
     .download2{
         appearance: none;
         border: none;
@@ -296,5 +384,21 @@ header{
         padding: 20px 10px;
         margin: 0 5px 0 0;
         border-radius: 5px;
+    }
+}
+
+@media (min-width: 1200px){
+
+    header{
+        padding: 0 140px;
+    }
+    .menu a, .menu2 a{
+        padding: 0 20px;
+        font-size: 18px;
+    }
+
+    .menu2 button{
+        font-size: 18px;
+        padding: 15px 15px;
     }
 }
