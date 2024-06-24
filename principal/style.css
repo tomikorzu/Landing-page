@@ -161,6 +161,11 @@ header{
     transition: .2s;
 }
 
+.download2:hover{
+    background-color: #6865ee;
+    transition: .2s;
+}
+
 .link1{
     width: 30%;
     display: flex;
@@ -263,6 +268,84 @@ header{
 }
 
 
+/* ABOUT */
+#about{
+
+}
+
+#about h2{
+    text-align: center;
+    padding: 0 30px;
+    font-weight: 400;
+    margin: 60px 0 30px 0 ;
+}
+
+.first-p{
+    padding: 0 40px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 30px;
+    color: #767575;
+    
+}
+
+
+
+.container-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0 0 0;
+}
+
+.creative-div{
+    box-shadow: 0 0 5px #a3a3a3;
+    max-width: 90%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.creative-div-1 img, .creative-div-1 p, .creative-div-1 h3{
+    margin: 0;
+}
+
+.creative-div-1 img{
+    padding: 0 0 0 20px ;
+    width: 24px;
+    height: 24px;
+}
+
+.creative-div-1 h3{
+    padding: 5px 0 15px 0;
+    font-weight: 400;
+}
+
+.creative-div-1 p{
+    color: #767575;
+    font-weight: 400;
+}
+
+.creative{
+    padding: 50px 0 80px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.creative-div-1{
+    padding: 20px 0 0 0;
+    display: flex;
+}
+
+.creative-text{
+    padding: 0 20px;
+}
+
+.img-about{
+    max-width: 60%;
+    margin: auto;
+}
 
 
 @media (min-width: 768px) {
