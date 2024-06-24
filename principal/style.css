@@ -155,6 +155,7 @@ header{
     padding: 4px 4px;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
 .download:hover{
     background-color: #6865ee;
@@ -334,7 +335,7 @@ header{
 }
 
 .creative-div-1{
-    padding: 20px 0 0 0;
+    padding: 20px 0 20px 0;
     display: flex;
 }
 
@@ -345,6 +346,10 @@ header{
 .img-about{
     max-width: 60%;
     margin: auto;
+}
+
+.third-p{
+    display: none;
 }
 
 
@@ -478,10 +483,6 @@ header{
         padding: 0 200px;
         margin: auto;
     }
-
-    .creative-div-1{
-        padding-bottom: 20px;
-    }
 }
 
 
@@ -545,6 +546,7 @@ header{
         padding: 20px 10px;
         margin: 0 5px 0 0;
         border-radius: 5px;
+        cursor: pointer;
     }
 
     .hero-content{
@@ -554,6 +556,27 @@ header{
 
     .marco{
         width: 50%;
+    }
+
+
+    .third-p{
+        display: block;
+    }
+
+    .second-p{
+        display: none;
+    }
+
+    .container-about{
+        padding-left: 80px;
+    }
+
+    .creative-div{
+        max-width: 70%;
+    }
+
+    .img-about{
+        min-width: 30%;
     }
 }
 
@@ -571,4 +594,6 @@ header{
         font-size: 18px;
         padding: 15px 15px;
     }
+
+    
 }
