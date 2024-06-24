@@ -453,6 +453,35 @@ header{
         justify-content: center;
         margin: 0;
     }
+
+
+    /* About */
+
+    .container-about{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        padding: 60px 0px 60px 50px;
+    }
+
+    .img-about{
+        margin: 0;
+        max-width: 50%;
+    }
+
+    .creative{
+        max-width: 100%;
+    }
+
+    .first-p{
+        padding: 0 200px;
+        margin: auto;
+    }
+
+    .creative-div-1{
+        padding-bottom: 20px;
+    }
 }
 
 
