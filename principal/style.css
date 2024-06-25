@@ -576,6 +576,7 @@ header{
         padding: 0 40px;
         text-align: center;
         line-height: 25px;
+        margin: 0;
     }
 
     .p1{
@@ -632,8 +633,17 @@ header{
         margin: 0;
     }
 
+    .img-msg{
+        margin: 0;
+        padding: 50px 0 0 0;
+    }
+
     .img-eye{
         padding-top: 25px;
+    }
+
+    .img-vector{
+        padding: 55px 0 0 0;
     }
 
     .s2{
@@ -643,11 +653,13 @@ header{
 
     .p3{
         text-align: end;
-        padding: 20px 0;
+        padding: 15px 0;
     }
 
     .h3-browser{
-        text-align: center;
+        text-align: end;
+        padding: 30px 0 0 0px;
+        line-height: 35px;
     }
 
     .img-app{
@@ -659,6 +671,17 @@ header{
         height: 50px;
     }
 
+    .img-tele{
+        margin: 20px 0 15px 0;
+    }
+
+    .txt-center{
+        text-align: center;
+    }
+
+    .h3-msg{
+        padding-bottom: 10px;
+    }
 }
 
 
