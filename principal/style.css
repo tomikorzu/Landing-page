@@ -39,7 +39,6 @@ header{
     height: 50px;
     border-radius: 5px;
     align-items: center;
-    position: fixed;
     z-index: 999;
 }
 .navbar a{
@@ -353,10 +352,19 @@ header{
 /* FEATURES */
 #features{
     background: url(../img/bg.png) center;
+    
+}
+
+.mobile-responsive{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 0 60px 0;
+    overflow: hidden;
+}
+
+.tablet-responsive{
+    display: none;
 }
 
 .feat-title{
@@ -370,6 +378,7 @@ header{
     margin: 0;
     padding: 0 40px;
     text-align: center;
+    max-width: 375px;
 }
 
 .img{
@@ -399,6 +408,10 @@ header{
 
 .s4{
     padding: 0 100px 25px 100px;
+}
+
+.hidden-p{
+    display: none;
 }
 
 @media (min-width: 768px) {
@@ -531,6 +544,121 @@ header{
         padding: 0 200px;
         margin: auto;
     }
+
+
+    /* FEATURES */
+
+    .mobile-responsive{
+        display: none;
+    }
+
+    .tablet-responsive{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 60px 0;
+        overflow: hidden;
+    }
+
+    .feat-container{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .hidden-p{
+        display: block;
+        padding: 0;
+        max-width: 450px;
+        color: #fff;
+        padding: 0 40px;
+        text-align: center;
+        line-height: 25px;
+    }
+
+    .p1{
+        display: none;
+    }
+
+    .feat-title{
+        font-size: 30px;
+        padding-top: 120px;
+    }
+
+    .feat-p{
+        max-width: 250px;
+        line-height: 25px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: row;
+        padding: 40px 30px 40px 20px;
+    }
+
+    .phone-eye{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin: 20px 0 0 15px;
+    }
+
+    
+
+    .browser-vector{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin: 20px 15px 0 0;
+    }
+
+    .feat-subtitle{
+        padding: 30px 0 0 0;
+        text-align: start;
+    }
+
+    .feat-p{
+        padding: 15px 0;
+        text-align: start;
+    }
+
+    .img-tablet{
+        margin: 0;
+    }
+
+    .img-tablet2{
+        margin: 0;
+    }
+
+    .img-eye{
+        padding-top: 25px;
+    }
+
+    .s2{
+        padding: 30px 0 0 0;
+        text-align: end;
+    }
+
+    .p3{
+        text-align: end;
+        padding: 20px 0;
+    }
+
+    .h3-browser{
+        text-align: center;
+    }
+
+    .img-app{
+        border-radius: 50px;
+    }
+
+    .img-phone{
+        width: 50px;
+        height: 50px;
+    }
+
 }
 
 
