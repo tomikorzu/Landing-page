@@ -40,6 +40,8 @@ header{
     border-radius: 5px;
     align-items: center;
     z-index: 999;
+    border: 1px solid #bcbcbc;
+    /* position: fixed; */
 }
 .navbar a{
     color: #000;
@@ -351,9 +353,11 @@ header{
 
 /* FEATURES */
 #features{
-    background: url(../img/bg.png) center;
+    background: url(../img/bg.png) bottom;
     
 }
+
+
 
 .mobile-responsive{
     display: flex;
@@ -363,8 +367,10 @@ header{
     overflow: hidden;
 }
 
-.tablet-responsive{
-    display: none;
+.responsive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .feat-title{
@@ -404,6 +410,7 @@ header{
     padding: 35px 100px 25px 100px;
     text-align: center;
     line-height: 30px;
+    max-width: 200px;
 }
 
 .s4{
@@ -413,6 +420,33 @@ header{
 .hidden-p{
     display: none;
 }
+
+.laptop-p{
+    display: none;
+}
+
+.feat-container{
+    padding-bottom: 60px;
+}
+
+.txt-center{
+    text-align: center;
+}
+
+.feat-container, .browser-vector, .phone-eye, .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-xs{
+    gap: 60px;
+}
+
+.img-app{
+    border-radius: 50px;
+}
+
 
 @media (min-width: 768px) {
 
@@ -534,6 +568,7 @@ header{
     .img-about{
         margin: 0;
         max-width: 50%;
+        object-fit: contain;
     }
 
     .creative{
@@ -552,12 +587,11 @@ header{
         display: none;
     }
 
-    .tablet-responsive{
+    .responsive{
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0 0 60px 0;
-        overflow: hidden;
     }
 
     .feat-container{
@@ -593,17 +627,19 @@ header{
         line-height: 25px;
     }
 
-    .content{
+    .content-xl{
         display: flex;
         flex-direction: row;
         padding: 40px 30px 40px 20px;
+        gap: 0;
+        align-items: start;
     }
 
     .phone-eye{
         display: flex;
         flex-direction: column;
         align-items: start;
-        margin: 20px 0 0 15px;
+        margin: 20px 0 0 20px;
     }
 
     
@@ -612,7 +648,8 @@ header{
         display: flex;
         flex-direction: column;
         align-items: end;
-        margin: 20px 15px 0 0;
+        margin: 20px 20px 0 0;
+        justify-content: end;
     }
 
     .feat-subtitle{
@@ -643,7 +680,7 @@ header{
     }
 
     .img-vector{
-        padding: 55px 0 0 0;
+        padding: 50px 0 0 0;
     }
 
     .s2{
@@ -662,9 +699,7 @@ header{
         line-height: 35px;
     }
 
-    .img-app{
-        border-radius: 50px;
-    }
+    
 
     .img-phone{
         width: 50px;
@@ -779,6 +814,44 @@ header{
 
     .img-about{
         min-width: 30%;
+    }
+
+    /* FEATURES */
+
+    .laptop-p{
+        display: block;
+        padding: 0;
+        max-width: 450px;
+        color: #fff;
+        text-align: center;
+        line-height: 25px;
+        margin: 0;
+
+    }
+    .hidden-p{
+        display: none;
+    }
+
+    .s3{
+        max-width: 100%;
+    }
+
+    .img-vector{
+        padding: 25px 0 0 0;
+    }
+
+    .content-xl{
+        gap: 30px;
+        padding: 0 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .feat-container{
+        width: 100%;
+    }
+
+    .img-app{
     }
 }
 
