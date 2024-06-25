@@ -353,7 +353,7 @@ header{
 
 /* FEATURES */
 #features{
-    background: url(../img/bg.png) bottom;
+    background: url(../img/bg.png) bottom / cover no-repeat;
     
 }
 
