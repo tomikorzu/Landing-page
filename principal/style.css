@@ -39,9 +39,9 @@ header{
     height: 50px;
     border-radius: 5px;
     align-items: center;
-    z-index: 999;
-    border: 1px solid #bcbcbc;
-    /* position: fixed; */
+    z-index: 2;
+    border: 1px solid #efefef;
+    position: fixed;
 }
 .navbar a{
     color: #000;
