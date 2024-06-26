@@ -485,7 +485,7 @@ padding: 5px*/
 }
 
 .card{
-    box-shadow: 0 0 5px #a3a3a3;
+    box-shadow: 0 0 5px #d1d1d1;
     padding: 30px 20px 50px 20px;
     margin: 0 15px;
     display: flex;
@@ -641,12 +641,20 @@ padding: 5px*/
     padding: 20px 0px;
     max-width: 290px;
 }
-.team-social{
-    
-}
 
-.team-social {
-    display: flex;
+.team-social{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 0 0;
+}
+.team-social li{
+    padding: 0 25px;
+}
+.team-social svg:hover{
+  fill: #5956E9;
+}
+.border-left{
+  border-left: 1px solid #8b8b8b;
 }
 
 
