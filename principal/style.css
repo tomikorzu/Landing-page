@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+
 body {
   margin: 0;
   font-family: "Josefin Sans", sans-serif;
@@ -40,7 +40,7 @@ header {
   align-items: center;
   z-index: 2;
   border: 1px solid #efefef;
-  /* position: fixed; */
+  position: fixed;
 }
 .navbar a {
   color: #000;
@@ -488,11 +488,13 @@ padding: 5px*/
 }
 .circle {
   position: relative;
-  border: 3px solid #5956e9;
-  border-radius: 70%;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
+    border: 3px solid #5956e9;
+    border-radius: 70%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    object-fit: contain;
 }
 .circle img {
   z-index: -1;
@@ -1260,8 +1262,6 @@ padding: 5px*/
     width: 100%;
   }
 
-  .img-app {
-  }
 }
 
 @media (min-width: 1200px) {
