@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
 
 body {
   margin: 0;
@@ -649,17 +650,27 @@ padding: 5px*/
 }
 .team-social {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   padding: 10px 0 0 0;
 }
 .team-social li {
-  padding: 0 20px;
+  padding: 0 25px;
 }
 .team-social svg:hover {
   fill: #5956e9;
 }
 .border-left {
   border-left: 1px solid #8b8b8b;
+}
+
+.icons{
+  color: #232233;
+  cursor: pointer;
+}
+.icons:hover{
+  color: #5956e9;
+  transition: .2s;
 }
 
 @media (min-width: 768px) {
@@ -1041,7 +1052,6 @@ padding: 5px*/
     left: -6.5px;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 99;
   }
   .left-space::before {
     content: "";
@@ -1075,7 +1085,6 @@ padding: 5px*/
     right: -6.5px;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 99;
   }
   .right-space::before {
     content: "";
