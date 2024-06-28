@@ -26,6 +26,9 @@ header {
   display: flex;
   justify-content: center;
 }
+main{
+  overflow: hidden;
+}
 
 .topbar {
   display: none;
@@ -478,7 +481,7 @@ padding: 5px*/
   display: flex;
   flex-direction: column;
   padding-top: 40px;
-  padding-bottom: 90px;
+  padding-bottom: 190px;
   gap: 30px;
 }
 
@@ -686,54 +689,111 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  padding: 180px 15px 0 15px;
+  color: #fff;
 }
 
 
 .footer-info{
-
+  left: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  top:-130px;
+  box-shadow: 0 0 70px 5px #00000020;
+  padding: 25px 0 0 0;
 }
 .footer-msg{
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .icon-circle{
-
+  background-color: #6865ee;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+.icon-circle img{
+  width: 18px;
+  height: 18px;
 }
 .msg-p{
-
+  display: none;
 }
 .msg-p-mobile{
-
+  margin: 0;
+  text-transform:uppercase;
+  padding: 20px 0 15px 0;
+  font-size: 20px;
+  color: #000;
+}
+.info-line{
+  width: 90px;
+  border: 1.5px solid #232233;
 }
 .footer-phone{
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
 }
-.phone-p{
 
+.phone-p{
+  font-size: 20px;
+  margin: 0;
+  padding: 25px 0 35px 0;
+  color: #000;
 }
 
 .footer-content{
+  display: flex;
+  flex-direction: column;
 
 }
 .footer-logo{
 
 }
 .h2-logo{
-
+  margin: 0;
+  padding-top: 40px;
+  font-size: 30px;
+  font-weight: 600;
 }
 .logo-p{
-
+  margin: 0;
+  padding: 15px 15px 40px 0;
+  line-height: 25px;
+  font-weight: 400;
 }
 .logo-p-mobile{
-
+  
 }
 .logo-p-tablet{
-
+  display: none;
 }
 .logo-p-laptop{
-
+  display: none;
 }
 .footer-logo-ul{
-
+  display: flex;
+  gap: 10px;
+}
+.footer-logo-ul li{
+  padding: 5px 20px 0 0;
+}
+.border-left-ft{
+  border-left: 1px solid #fff;
 }
 .icons-footer{
 
