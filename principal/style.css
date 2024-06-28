@@ -470,6 +470,9 @@ padding: 5px*/
 .team-p-tablet {
   display: none;
 }
+.team-p-laptop{
+  display: none;
+}
 
 .team-container {
   display: flex;
@@ -1270,6 +1273,62 @@ padding: 5px*/
     width: 100%;
   }
 
+  /* TEAM */
+
+  #team{
+    max-width: 1024px;
+  }
+
+  .team-p{
+    display: none;
+  }
+  .team-p-tablet{
+    display: none;
+  }
+
+  .team-p-laptop{
+    display: block;
+    margin: 0;
+    text-align: center;
+    color: #767575;
+    padding: 0 40px;
+    line-height: 25px;
+    max-width: 600px;
+  }
+
+  .team-container{
+    margin: 0;
+    gap: 20px;
+  }
+
+  .card{
+    margin: 0;
+    padding-top: 25px;
+    padding: 25px 15px 50px 15px;
+  }
+  .team-name{
+    font-size: 28px;
+    padding: 50px 0 15px 0;
+  }
+  .ocupation{
+    font-size: 20px;
+  }
+  .description-p-tablet{
+    display: none;
+  }
+  .description-p-laptop{
+    display: block;
+    text-align: center;
+    color: #767575;
+    line-height: 25px;
+    margin: 0;
+    padding: 20px 0px;
+    max-width: 280px;
+  }
+
+  .team-social li{
+    padding: 0 25px;
+  }
 }
 
 @media (min-width: 1200px) {
