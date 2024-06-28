@@ -650,6 +650,9 @@ padding: 5px*/
 .description-p-tablet {
   display: none;
 }
+.description-p-laptop{
+  display: none;
+}
 .team-social {
   display: flex;
   flex-direction: row;
