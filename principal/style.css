@@ -264,12 +264,11 @@ padding: 5px*/
   margin: 60px 0 120px 0;
 }
 
-.img-xs {
-  width: 75%;
-}
-
 .img-xl {
-  display: none;
+  
+  width: 100%;
+  max-width: 400px;
+  transform: translateX(17.5%);
 }
 
 /* ABOUT */
@@ -955,9 +954,6 @@ footer{
     max-width: 400px;
   }
 
-  .hero-2 {
-    max-width: 350px;
-  }
 
   .hero-1 {
     margin: 15px 20px 15px -40px;
@@ -973,8 +969,9 @@ footer{
   }
 
   .img-xl {
-    display: flex;
+  
     width: 100%;
+    max-width: 350px;
   }
 
   .hero-2 {
