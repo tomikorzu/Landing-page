@@ -1458,6 +1458,10 @@ footer{
     width: 100%;
     max-width: 220px;
   }
+  .input-adress{
+    font-size: 12px;
+    font-weight: 300;
+  }
   .input-button{
     width: 35%;
     margin: 2px;
