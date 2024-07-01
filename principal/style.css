@@ -1351,6 +1351,120 @@ footer{
   .team-social li {
     padding: 0 15px;
   }
+
+  /* FOOTER */
+
+  footer{
+    padding: 100px 35px 0;
+    align-items: start;
+  }
+
+  .footer-info{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    padding: 25px 0;
+    left: 35px;
+    right: 35px;
+    max-width: 698px;
+    margin: auto;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 100px 10px #00000024;
+    top: 0;
+    transform: translateY(-80px);
+  }
+  .footer-msg{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+  }
+  .icon-circle{
+    margin: 0 0 0 15px;
+    padding: 5px;
+  }
+  .icon-circle img{
+    width: 20px;
+    height: 20px;
+  }
+  .msg-p{
+    display: block;
+    color: #000;
+  }
+  .msg-p-mobile{
+    display: none;
+  }
+  .info-line{
+    display: none;
+  }
+  .footer-phone{
+    display: flex;
+    flex-direction: row;
+    border-left: 3px solid #6C6C72;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 20px;
+    justify-content: start;
+    gap: 15px;
+  }
+  .phone-p{
+    padding: 0;
+    font-size: 16px;
+  }
+
+  .footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .h2-logo{
+    font-weight: 700;
+  }
+  .footer-quick-link{
+    gap: 30px;
+    padding-right: 100px;
+  }
+  .h3-quick-news{
+    padding-top: 40px;
+    font-size: 20px;
+    transform: translateY(10px);
+  }
+  .footer-quick-link-ul{
+    gap: 25px;
+  }
+
+  .logo-p-mobile{
+    display: none;
+  }
+  .logo-p-tablet{
+    display: block;
+    max-width: 230px;
+  }
+  .non-border{
+    padding: 5px 20px 5px 0;
+  }
+  .border-left-ft{
+    padding: 5px 20px;
+  }
+  .news-p{
+    max-width: 220px;
+    line-height: 25px;
+    padding: 25px 0px 35px 0;
+  }
+  .news-input-container{
+    width: 100%;
+    max-width: 220px;
+  }
+  .input-button{
+    width: 35%;
+    margin: 2px;
+  }
+  .footer-copyright{
+    margin: 0;
+  }
 }
 
 @media (min-width: 1024px) {
