@@ -138,6 +138,7 @@ main{
   z-index: 10;
   width: 30%;
   height: 30px;
+  max-width: 150px;
 }
 
 .logo img {
@@ -147,11 +148,12 @@ main{
 .download {
   background-color: #5956e9;
   color: #fff;
-  margin: 0 10px 0 0;
-  padding: 4px 4px;
+  margin: 2px;
+  padding: 7px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  display: flex;
 }
 
 /* modificar 
@@ -761,9 +763,6 @@ footer{
   flex-direction: column;
 
 }
-.footer-logo{
-
-}
 .h2-logo{
   margin: 0;
   padding-top: 40px;
@@ -775,9 +774,6 @@ footer{
   padding: 15px 15px 40px 0;
   line-height: 25px;
   font-weight: 400;
-}
-.logo-p-mobile{
-  
 }
 .logo-p-tablet{
   display: none;
@@ -940,7 +936,7 @@ footer{
   }
 
   .download {
-    width: 25%;
+    padding: 10px;
   }
 
   .hero-content {
