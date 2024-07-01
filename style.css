@@ -17,7 +17,7 @@ a {
 
 .hero {
   z-index: -1;
-  background: url(../img/fondo.png) center;
+  background: url(img/fondo.png) center;
 }
 
 header {
@@ -352,7 +352,7 @@ padding: 5px*/
 
 /* FEATURES */
 #features {
-  background: url(../img/fondo.png) bottom / cover no-repeat;
+  background: url(img/fondo.png) bottom / cover no-repeat;
 }
 
 .mobile-responsive {
