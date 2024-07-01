@@ -933,6 +933,7 @@ footer{
 
   .logo {
     height: 50px;
+    min-width: 20%;
   }
 
   .download {
