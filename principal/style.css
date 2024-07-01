@@ -1655,6 +1655,50 @@ footer{
   .team-social li{
     padding: 0 25px;
   }
+
+  /* FOOTER */
+  footer{
+    padding: 150px 65px 0;
+  }
+  .footer-logo{
+    width: 33.3%;
+  }
+  .logo-p-tablet{
+    display: none;
+  }
+  .logo-p-laptop{
+    display: block;
+    max-width: 330px;
+  }
+  .non-border{
+    padding: 5px 30px 5px 0;
+  }
+  .border-left-ft{
+    padding: 5px 30px;
+  }
+  .footer-quick-link{
+    padding: 0;
+    width: 33.3%;
+  }
+  .footer-quick-link-ul{
+    gap: 20px;
+  }
+  .footer-news-letter{
+    width: 33.3%;
+  }
+  .news-p{
+    max-width: 300px;
+  }
+  .news-input-container{
+    max-width: 100%;
+  }
+  .input-adress{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .input-button{
+    width: 20%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1670,5 +1714,13 @@ footer{
   .menu2 button {
     font-size: 18px;
     padding: 15px 15px;
+  }
+
+  /* FOOTEr */
+  footer{
+    padding: 150px 130px 0;
+  }
+  .footer-content{
+    gap: 20px;
   }
 }
