@@ -126,7 +126,6 @@ main{
 .list:checked ~ .lines .line3 {
   transform: rotate(-45deg);
 }
-
 .logo {
   display: flex;
   align-items: center;
@@ -446,6 +445,7 @@ padding: 5px*/
 
 .img-app {
   border-radius: 50px;
+  box-shadow: 20px 20px 30px 0px #18303F80;
 }
 
 /* TEAM */
