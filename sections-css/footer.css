@@ -88,12 +88,6 @@ footer {
   line-height: 25px;
   font-weight: 400;
 }
-.logo-p-tablet {
-  display: none;
-}
-.logo-p-laptop {
-  display: none;
-}
 .footer-logo-ul {
   display: flex;
   padding-bottom: 40px;
@@ -266,10 +260,8 @@ footer {
     gap: 25px;
   }
 
-  .logo-p-mobile {
-    display: none;
-  }
-  .logo-p-tablet {
+
+  .logo-p {
     display: block;
     max-width: 230px;
   }
@@ -308,10 +300,7 @@ footer {
   .footer-logo {
     width: 33.3%;
   }
-  .logo-p-tablet {
-    display: none;
-  }
-  .logo-p-laptop {
+  .logo-p {
     display: block;
     max-width: 330px;
   }
