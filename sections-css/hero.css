@@ -230,16 +230,15 @@ header {
     justify-content: space-between;
     padding: 30px 0;
   }
-  .topbar img {
-    width: 20px;
-    height: 20px;
+  .topbar i {
+    color: #fff;
   }
   .contact-topbar {
     display: flex;
     gap: 50px;
     align-items: center;
   }
-  .contact-topbar img {
+  .contact-topbar i {
     padding: 0 10px 0 0;
   }
   .topbar p {
@@ -250,6 +249,9 @@ header {
   .mail {
     display: flex;
   }
+  .mail i{
+    transform: translateY(2px);
+  }
   .phone {
     display: flex;
     align-items: center;
@@ -257,6 +259,9 @@ header {
   .contact-social {
     display: flex;
     gap: 20px;
+  }
+  .contact-social i{
+    transform: translateY(2px);
   }
   .logo {
     height: 50px;

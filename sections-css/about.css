@@ -38,11 +38,12 @@
   padding: 20px 0 20px 0;
   display: flex;
 }
-.about-creative-div-1 img {
-  padding: 0 0 0 20px;
+.about-creative-div-1 i {
+  padding: 12.5px 0 0 20px;
   width: 24px;
   height: 24px;
   margin: 0;
+  color: #5956e9;
 }
 .about-creative-div-1 h3 {
   padding: 5px 0 15px 0;

@@ -37,7 +37,10 @@ footer {
   align-items: center;
   padding: 2px;
 }
-.icon-circle img {
+.icon-circle i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 18px;
   height: 18px;
 }
