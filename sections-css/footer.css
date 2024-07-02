@@ -73,6 +73,8 @@ footer {
 .footer-content {
   display: flex;
   flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
 }
 .h2-logo {
   margin: 0;
@@ -174,6 +176,8 @@ footer {
   margin: 60px 0 0 0;
   padding: 20px 0 30px 0;
   width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 .copyright-icon {
   padding: 0 20px 0 15px;
@@ -349,5 +353,8 @@ footer {
   }
   .footer-content {
     gap: 20px;
+  }
+  .footer-copyright{
+    margin: auto;
   }
 }

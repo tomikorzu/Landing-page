@@ -6,6 +6,8 @@ header {
   padding: 40px 0;
   display: flex;
   justify-content: center;
+  max-width: 1000px;
+  margin: auto;
 }
 .topbar {
   display: none;
@@ -161,6 +163,7 @@ header {
   justify-content: center;
   overflow: hidden;
   padding: 100px 0 0 0;
+  margin: auto;
 }
 .marco {
   border: 10px solid #ffffff60;
