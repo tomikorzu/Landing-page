@@ -90,15 +90,6 @@
     .container-about {
         padding-left: 80px;
       }
-      .about-laptop-p {
-        display: block;
-      }
-      .about-mobil-tablet-p {
-        display: none;
-      }
-      .about-creative-div {
-        max-width: 70%;
-      }
       .about-img {
         min-width: 30%;
       }
