@@ -2,28 +2,22 @@
   header {
     padding: 0 80px;
   }
-
+  .list {
+    display: none;
+  }
   .lines {
     display: none;
   }
-
   .toggle {
     display: none;
   }
-
   .download {
     display: none;
   }
-
   .link1 {
     display: flex;
     position: relative;
   }
-
-  .list {
-    display: none;
-  }
-
   .menu {
     display: flex;
     align-items: center;
@@ -45,11 +39,9 @@
   .link2 a {
     padding: 20px 10px;
   }
-
   .logo {
     width: 20%;
   }
-
   .download2 {
     appearance: none;
     border: none;
@@ -74,30 +66,25 @@
     width: 50%;
   }
 
-  /* FEATURES */
-
-  .about-laptop-p {
-    display: block;
-  }
-
-  .about-mobil-tablet-p {
-    display: none;
-  }
+  /* ABOUT */
 
   .container-about {
     padding-left: 80px;
   }
-
+  .about-laptop-p {
+    display: block;
+  }
+  .about-mobil-tablet-p {
+    display: none;
+  }
   .creative-div {
     max-width: 70%;
   }
-
   .img-about {
     min-width: 30%;
   }
 
   /* FEATURES */
-
   .laptop-p {
     display: block;
     padding: 0;
@@ -110,21 +97,17 @@
   .hidden-p {
     display: none;
   }
-
   .s3 {
     max-width: 100%;
   }
-
   .img-vector {
     padding: 25px 0 0 0;
   }
-
   .content-xl {
     gap: 30px;
     padding: 0 20px;
     justify-content: center;
   }
-
   .feat-container {
     width: 100%;
   }
@@ -134,14 +117,12 @@
   #team {
     max-width: 1024px;
   }
-
   .team-p {
     display: none;
   }
   .team-p-tablet {
     display: none;
   }
-
   .team-p-laptop {
     display: block;
     margin: 0;
@@ -151,15 +132,12 @@
     line-height: 25px;
     max-width: 600px;
   }
-
   .team-container {
     margin: 0;
     gap: 20px;
   }
-
   .card {
     margin: 0;
-    padding-top: 25px;
     padding: 25px 15px 50px 15px;
   }
   .team-name {
@@ -181,7 +159,6 @@
     padding: 20px 0px;
     max-width: 280px;
   }
-
   .team-social li {
     padding: 0 25px;
   }

@@ -11,7 +11,7 @@
   .lines {
     left: 15px;
   }
-  /* --- Topbar --- */
+  /* --- Topbar --- */    
   .topbar {
     display: flex;
     justify-content: space-between;
@@ -227,9 +227,6 @@
     font-size: 30px;
     font-weight: 700;
   }
-  .team-p {
-    display: none;
-  }
   .team-p-tablet {
     display: block;
     margin: 0;
@@ -239,15 +236,14 @@
     line-height: 25px;
     max-width: 450px;
   }
-
+  .card {
+    padding: 30px 0px 50px 0px;
+    margin: 0 5px;
+  }
   .team-container {
     flex-direction: row;
     gap: 0;
     margin: 0 35px;
-  }
-  .card {
-    padding: 30px 0px 50px 0px;
-    margin: 0 5px;
   }
   .circle img {
     width: 150px;
